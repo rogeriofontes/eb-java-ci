@@ -17,6 +17,6 @@ public class VersionController {
 
     @GetMapping("/")
     public String health() {
-        return "Service is fine.";
+        return "Service is fine v2.";
     }
 }
