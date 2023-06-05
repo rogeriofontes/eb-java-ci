@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu
     steps:
       - uses: actions/checkout@v1
       - name: Set up JDK
@@ -26,7 +26,7 @@ jobs:
   deploy:
     needs: build
     name: Deploy
-    runs-on: ubuntu-latest/
+    runs-on: ubuntu/
     steps:
       - name: Download JAR
         uses: actions/download-artifact@v2
